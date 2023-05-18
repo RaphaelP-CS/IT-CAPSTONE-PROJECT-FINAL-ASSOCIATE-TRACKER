@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Associate Tracker</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"></div>
+        <h1><center>The Associate Tracker</center></h1></header>
+        </nav>
+    </header>
+
+
+    <div class="sidebar">
+        <h1>The Associate Tracker</h1>
+        <a href="#">Associates</a>
+        <a href="#">Placeholder1</a>
+        <a href="#">Placeholder2</a>
+        <a href="#">Placeholder3</a>
+        <a href="#">Placeholder4</a>
+    </div>
+    <div class="img">
+      <h1>Event Data Graph</h1>
+      <img src="{{ graph_url }}" alt="Event Data Graph" /> 
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>The Associate Tracker</title>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo"></div>
+            <h1><center>The Associate Tracker</center></h1></header>
+            </nav>
+        </header>
+
+
+        <div class="sidebar">
+            <h1>The Associate Tracker</h1>
+            <a href="#">Associates</a>
+            <a href="#">Placeholder1</a>
+            <a href="#">Placeholder2</a>
+            <a href="#">Placeholder3</a>
+            <a href="#">Placeholder4</a>
+        </div>
+
+        <form action="/index" method="post">
+            <div class="searchbox">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="User"></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="User" name="Username" placeholder="Associates Username..." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Event"></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="Event" name="Event" placeholder="Requested Event..." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Start"></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" min="2023-04-01" id="Start" name="Start" placeholder="00/00/0000" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="End"></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" max="2023-05-1" id="End" name="End" placeholder="00/00/0000" required>
+                    </div>
+                </div>
+                <div class="pass"></div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
